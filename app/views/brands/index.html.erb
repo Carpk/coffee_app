@@ -6,9 +6,9 @@
   <h3>Submit new brand:</h3>
   <%= form_tag("/search", method: "get") do %>
   <%= label_tag(:q, "Brand:") %>
-  <%= text_field_tag(:q) %>
+  <%= text_field_tag(:brand) %><br>
   <%= label_tag(:q, "Store:") %>
-  <%= text_field_tag(:q) %>
+  <%= text_field_tag(:store) %><br>
   <%= submit_tag("Submit") %>
 <% end %>
 </div>
