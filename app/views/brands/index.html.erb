@@ -2,6 +2,22 @@
   <h2>Welcome to Coffee Beans</h2>
   <h3>Select a brand to rate or submit a new one</h3>
 </div>
+<div class='content form-right'>
+  <h3>Submit new brand:</h3>
+  <%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:q, "Brand:") %>
+  <%= text_field_tag(:q) %>
+  <%= label_tag(:q, "Store:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Submit") %>
+<% end %>
+</div>
 
-<div class='content left'>Coffee brand selection list:</div>
-<div class='content form-right'>Submit new brand:</div>
+<div class='content left'>
+  <h3>Coffee brand selection list:</h3>
+  <ol>
+    <%@brands.each do |brand| %>
+      <li><%= brand.name %></li>
+    <% end %>
+  </ol>
+</div>
