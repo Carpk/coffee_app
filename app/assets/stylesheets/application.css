@@ -11,3 +11,30 @@
  *= require_self
  *= require_tree .
  */
+
+body {
+  margin: 0;
+  background-image:url('coffeebeans.jpg');
+  /*background-size:80px 60px;*/
+}
+
+body h1 {
+  color: #8b8800;
+  margin-top: 0;
+  margin-left: 25px;
+  padding-top: 20px;
+}
+
+.container {
+  color: #8b8800;
+  background: #3e1e00;
+  width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+
+  height: 80px;
+  background: #3e1e00;
+}
