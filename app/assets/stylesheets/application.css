@@ -27,14 +27,35 @@ body h1 {
 
 .container {
   color: #8b8800;
-  background: #3e1e00;
+  /*background: #3e1e00;*/
   width: 850px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.header {
+.content {
+  margin-top: 20px;
+  padding: 1px 10px 0px 10px;
+  background: #3e1e00;
+  box-shadow: 10px 10px 5px black;
+}
 
+.content h2 {
+  margin-top: 8px;
+}
+
+.header {
+  box-shadow: 0px 10px 5px black;
   height: 80px;
   background: #3e1e00;
+}
+
+.form-right {
+  float: right;
+  width: 250px;
+}
+
+.left {
+  float: left;
+  /*width: 98%;*/
 }
