@@ -22,6 +22,7 @@
         <td><%= link_to bean.name, brand_beans_path(bean.id) %></td>
         <td><center><%= bean.roast %></center></td>
         <td><center><%= bean.reviews.count %></center></td>
+        <td><center><%= bean.avg_score %></center></td>
       </tr>
     <% end %>
   </table>
