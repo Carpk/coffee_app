@@ -21,6 +21,7 @@
       <tr>
         <td><%= link_to brand.name, brand_path(brand.id) %></td>
         <td><center><%= brand.beans.count %></center></td>
+        <td><center><%= brand.avg_score %></center></td>
       </tr>
     <% end %>
   </table>
