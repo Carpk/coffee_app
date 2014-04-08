@@ -6,6 +6,7 @@ class BrandsController < ApplicationController
 
   def show
     @beans = Bean.where(brand_id: params[:id])
+    @brand = Brand.find_by(id: params[:id])
     
   end
 end
