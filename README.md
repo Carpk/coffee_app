@@ -4,6 +4,8 @@ Coffee rating application, submit a brand and bean and rate it!
 
 ### Getting Started
 
+To get the application running on your local machine, run the following commands below:
+
 `bundle`
 
 `rake db:create`
