@@ -65,3 +65,7 @@ body h1 {
 ol li{
   padding-bottom: 5px;
 }
+
+tr td a {
+  color: #8b8800;
+}

@@ -1,1 +1,32 @@
-show.html.erb
+<div class='content'>
+  <h2>Welcome to DISPLAY BRAND AND BEAN</h2>
+  <h3><%=params%></h3>
+</div>
+<div class='content form-right'>
+  <h3>Submit new brand:</h3>
+  <%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:q, "Brand:") %>
+  <%= text_field_tag(:brand) %><br>
+  <%= label_tag(:q, "Store:") %>
+  <%= text_field_tag(:store) %><br>
+  <%= submit_tag("Submit") %>
+<% end %>
+</div>
+
+<div class='content left'>
+  <h3>Coffee brand selection list:</h3>
+  <table style="width: 450px">
+    <tr><th>User:</th><th>Brew type:</th><th>Drinker for:</th><th>Flavor:</th><th>Caffeine:</th><th>Overall:</th></tr>
+    <%@reviews.each do |review| %>
+      <tr>
+        <td><%= review.user %></td>
+        <td><center><%= review.brew %></center></td>
+        <td><center><%= review.experiance %>yrs.</center></td>
+        <td><center><%= review.flavor %></center></td>
+        <td><center><%= review.caffeine %></center></td>
+        <td><center><%= review.rating %></center></td>
+      </tr>
+      <!-- # <tr><%= review.comment %></tr> -->
+    <% end %>
+  </table>
+</div>
