@@ -4,8 +4,6 @@ class CreateBeans < ActiveRecord::Migration
       t.references :brand
       t.string     :name
       t.string     :roast
-      t.integer    :caffeine
-      t.integer    :flavor
       t.text       :description
 
       t.timestamps

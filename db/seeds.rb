@@ -15,36 +15,36 @@ Brand.create(name: "Peet's", store: "supermarkets")
 
 6.times do |id|
   id += 1
-  Bean.create(brand_id: id, name: "Hazelnut", roast: "Light", caffeine: 2, flavor: 5, 
+  Bean.create(brand_id: id, name: "Hazelnut", roast: "Light", 
               description: "Buttery and sweet with the rich flavor of warm roasted nuts")
-  Bean.create(brand_id: id, name: "Colombian", roast: "Medium", caffeine: 5, flavor: 2, 
+  Bean.create(brand_id: id, name: "Colombian", roast: "Medium", 
               description: "Buttery and sweet with the rich flavor of warm roasted nuts")
-  Bean.create(brand_id: id, name: "House Blend", roast: "Dark", caffeine: 4, flavor: 3, 
+  Bean.create(brand_id: id, name: "House Blend", roast: "Dark", 
               description: "apricot, blueberries, paint thinner, gamy, leathery, dark chocolate")
-  Bean.create(brand_id: id, name: "French Vanilla", roast: "Medium", caffeine: 2, flavor: 3, 
+  Bean.create(brand_id: id, name: "French Vanilla", roast: "Medium", 
               description: "earthy, mushroomy, wet forest, molasses")
-  Bean.create(brand_id: id, name: "Breakfast Blend", roast: "Medium", caffeine: 3, flavor: 4, 
+  Bean.create(brand_id: id, name: "Breakfast Blend", roast: "Medium", 
               description: "Buttery and sweet with the rich flavor of warm roasted nuts")
 end
 
 5.times do |id|
   id += 1
-  Bean.create(brand_id: id, name: "Carmel", roast: "Light", caffeine: 2, flavor: 4, 
+  Bean.create(brand_id: id, name: "Carmel", roast: "Light", 
               description: "Profoundly creamy and pleasantly sweet")
-  Bean.create(brand_id: id, name: "Italian Roast", roast: "Medium", caffeine: 3, flavor: 3, 
+  Bean.create(brand_id: id, name: "Italian Roast", roast: "Medium", 
               description: "Buttery and sweet with the rich flavor of warm roasted nuts")
 end
 
 3.times do |id|
   id += 1
-  Bean.create(brand_id: id, name: "Coconut", roast: "Light", caffeine: 1, flavor: 4, 
+  Bean.create(brand_id: id, name: "Coconut", roast: "Light", 
               description: "Buttery and sweet with the rich flavor of warm roasted nuts")
-  Bean.create(brand_id: id, name: "Pumkin Spice", roast: "Light", caffeine: 2, flavor: 3, 
+  Bean.create(brand_id: id, name: "Pumkin Spice", roast: "Light", 
     description: "Buttery and sweet with the rich flavor of warm roasted nuts")
 end
 
 1.times do |id|
   id += 1
-  Bean.create(brand_id: id, name: "Sumatra", roast: "Dark", caffeine: 3, flavor: 4, 
+  Bean.create(brand_id: id, name: "Sumatra", roast: "Dark", 
               description: "Buttery and sweet with the rich flavor of warm roasted nuts")
 end

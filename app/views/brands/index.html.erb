@@ -20,7 +20,7 @@
     <%@brands.each do |brand| %>
       <tr>
         <td><%= link_to brand.name, brand_path(brand.id) %></td>
-        <td><%= brand.beans.count %></td>
+        <td><center><%= brand.beans.count %></center></td>
       </tr>
     <% end %>
   </table>

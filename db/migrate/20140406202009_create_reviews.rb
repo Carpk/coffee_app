@@ -1,11 +1,14 @@
 class CreateReviews < ActiveRecord::Migration
   def change
     create_table :reviews do |t|
-      t.string  :name
-      t.integer :rating
-      t.string  :brew
-      t.integer :experiance
-      t.text    :comment
+      t.references :bean
+      t.string     :user
+      t.integer    :experiance
+      t.string     :brew
+      t.integer    :caffeine
+      t.integer    :flavor
+      t.integer    :rating
+      t.text       :comment
 
       t.timestamps
     end

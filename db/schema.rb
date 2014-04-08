@@ -17,8 +17,6 @@ ActiveRecord::Schema.define(version: 20140406202009) do
     t.integer  "brand_id"
     t.string   "name"
     t.string   "roast"
-    t.integer  "caffeine"
-    t.integer  "flavor"
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -27,16 +25,18 @@ ActiveRecord::Schema.define(version: 20140406202009) do
   create_table "brands", force: true do |t|
     t.string   "name"
     t.string   "store"
-    t.integer  "rating"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "reviews", force: true do |t|
-    t.string   "name"
-    t.integer  "rating"
-    t.string   "brew"
+    t.integer  "bean_id"
+    t.string   "user"
     t.integer  "experiance"
+    t.string   "brew"
+    t.integer  "caffeine"
+    t.integer  "flavor"
+    t.integer  "rating"
     t.text     "comment"
     t.datetime "created_at"
     t.datetime "updated_at"

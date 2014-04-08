@@ -29,7 +29,9 @@ CoffeeApp::Application.routes.draw do
   # Example resource route with sub-resources:
     resources :brands do
   #     resources :comments, :sales
-      resource :beans
+      resource :beans do
+        resource :reviews
+      end
     end
 
   # Example resource route with more complex sub-resources:
