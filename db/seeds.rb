@@ -33,6 +33,8 @@ end
               description: "Profoundly creamy and pleasantly sweet")
   Bean.create(brand_id: id, name: "Italian Roast", roast: "Medium", 
               description: "Buttery and sweet with the rich flavor of warm roasted nuts")
+  Bean.create(brand_id: id, name: "Rainforest Blend", roast: "Medium", 
+              description: "Buttery and sweet with the rich flavor of warm roasted nuts")
 end
 
 3.times do |id|
@@ -48,3 +50,11 @@ end
   Bean.create(brand_id: id, name: "Sumatra", roast: "Dark", 
               description: "Buttery and sweet with the rich flavor of warm roasted nuts")
 end
+
+# 47 beans
+brewer = ["Drip", "Chemex", "Drip", "Drip", "French Press", "French Press", "Stovetop"]
+
+Review.create(bean_id: rand(1..47), user: Faker::Internet.user_name, experiance: rand(3..20),
+              brew: brewer.sample, caffeine: rand(1..5), flavor: rand(2..5), rating: rand(1..5),
+              comment: Faker::Lorem.sentence)
+
