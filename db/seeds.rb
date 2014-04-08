@@ -53,8 +53,8 @@ end
 
 # 47 beans
 brewer = ["Drip", "Chemex", "Drip", "Drip", "French Press", "French Press", "Stovetop"]
-
-Review.create(bean_id: rand(1..47), user: Faker::Internet.user_name, experiance: rand(3..20),
-              brew: brewer.sample, caffeine: rand(1..5), flavor: rand(2..5), rating: rand(1..5),
-              comment: Faker::Lorem.sentence)
-
+180.times do
+  Review.create(bean_id: rand(1..52), user: Faker::Internet.user_name, experiance: rand(3..20),
+                brew: brewer.sample, caffeine: rand(1..5), flavor: rand(2..5), rating: rand(1..5),
+                comment: Faker::Lorem.sentence)
+end
