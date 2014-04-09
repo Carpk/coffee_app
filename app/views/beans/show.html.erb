@@ -3,14 +3,16 @@
   <h3><%= @bean.name %></h3>
 </div>
 <div class='content form-right'>
-  <h3>Submit new brand:</h3>
-  <%= form_tag("/search", method: "get") do %>
-  <%= label_tag(:q, "Brand:") %>
-  <%= text_field_tag(:brand) %><br>
-  <%= label_tag(:q, "Store:") %>
-  <%= text_field_tag(:store) %><br>
-  <%= submit_tag("Submit") %>
-<% end %>
+  <h3>Submit a review:</h3>
+  <%= form_for @new_review, url: brand_beans_reviews_path(@bean.id) do |f| %> 
+      User name: <%= f.text_field :user %>
+      Drinking for: <%= f.text_field :experiance %>
+      Brew type: <%= f.text_field :brew %>
+      Caffeine: <%= f.text_field :caffeine %>
+      Flavor: <%= f.text_field :flavor %>
+      Overall: <%= f.text_field :rating %>
+      <%= f.submit %>
+  <% end %>
 </div>
 
 <div class='content left'>

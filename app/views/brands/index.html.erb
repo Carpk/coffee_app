@@ -4,13 +4,11 @@
 </div>
 <div class='content form-right'>
   <h3>Submit new brand:</h3>
-  <%= form_tag("/search", method: "get") do %>
-  <%= label_tag(:q, "Brand:") %>
-  <%= text_field_tag(:brand) %><br>
-  <%= label_tag(:q, "Store:") %>
-  <%= text_field_tag(:store) %><br>
-  <%= submit_tag("Submit") %>
-<% end %>
+  <%= form_for @new_brand do |f| %> 
+      Brand name: <%= f.text_field :name %>
+      Store name: <%= f.text_field :store %>
+      <%= f.submit %>
+  <% end %>
 </div>
 
 <div class='content left'>
