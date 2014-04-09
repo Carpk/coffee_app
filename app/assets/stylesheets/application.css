@@ -53,7 +53,16 @@ body h1 {
 .form-right {
   float: right;
   width: 275px;
-  padding: 0px 0px 15px 15px;
+  padding: 0px 7px 15px 7px;
+}
+
+label {
+  width: 80px;
+  /*width: 4em;*/
+  float: left;
+  text-align: right;
+  margin-right: 0.25em;
+  display: block
 }
 
 .left {

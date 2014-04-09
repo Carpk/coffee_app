@@ -5,8 +5,8 @@
 <div class='content form-right'>
   <h3>Submit new brand:</h3>
   <%= form_for @new_brand do |f| %> 
-      Brand name: <%= f.text_field :name %>
-      Store name: <%= f.text_field :store %>
+      <%= f.label :brand_name %> <%= f.text_field :name %>
+      <%= f.label :store_name %> <%= f.text_field :store %>
       <%= f.submit %>
   <% end %>
 </div>

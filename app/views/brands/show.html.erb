@@ -6,9 +6,9 @@
 <div class='content form-right'>
   <h3>Submit new bean:</h3>
   <%= form_for @new_bean, url: brand_beans_path(@brand.id) do |f| %> 
-      Bean name: <%= f.text_field :name %>
-      Roast type: <%= f.text_field :roast %>
-      Description: <%= f.text_field :description %>
+      <%= f.label :bean_name %> <%= f.text_field :name %>
+      <%= f.label :roast_type %> <%= f.text_field :roast %>
+      <%= f.label :description %> <%= f.text_field :description %>
       <%= f.submit %>
   <% end %>
 </div>

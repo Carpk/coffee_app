@@ -5,12 +5,12 @@
 <div class='content form-right'>
   <h3>Submit a review:</h3>
   <%= form_for @new_review, url: brand_beans_reviews_path(@bean.id) do |f| %> 
-      User name: <%= f.text_field :user %>
-      Drinking for: <%= f.text_field :experiance %>
-      Brew type: <%= f.text_field :brew %>
-      Caffeine: <%= f.text_field :caffeine %>
-      Flavor: <%= f.text_field :flavor %>
-      Overall: <%= f.text_field :rating %>
+      <%= f.label :user_name %> <%= f.text_field :user %>
+      <%= f.label :drinking_for %> <%= f.text_field :experiance %>
+      <%= f.label :brew_type %> <%= f.text_field :brew %>
+      <%= f.label :caffeine %> <%= f.text_field :caffeine %>
+      <%= f.label :flavor %> <%= f.text_field :flavor %>
+      <%= f.label :overall %> <%= f.text_field :rating %>
       <%= f.submit %>
   <% end %>
 </div>
