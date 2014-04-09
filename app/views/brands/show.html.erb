@@ -9,6 +9,7 @@
       <%= f.label :bean_name %> <%= f.text_field :name %>
       <%= f.label :roast_type %> <%= f.text_field :roast %>
       <%= f.label :description %> <%= f.text_field :description %>
+      <%= f.hidden_field :brand_id, :value => @brand.id %>
       <%= f.submit %>
   <% end %>
 </div>
