@@ -75,6 +75,10 @@ ol li{
   padding-bottom: 5px;
 }
 
+table {
+  width: 500px;
+}
+
 tr td a {
   color: #8b8800;
 }

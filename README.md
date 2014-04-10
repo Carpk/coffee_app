@@ -1,6 +1,6 @@
 ## Coffee App
 
-Coffee rating application, submit a brand and bean and rate it!
+Coffee rating application, submit a brand and bean and rate it! Runs on Rails 4.0.4
 
 ### Getting Started
 
