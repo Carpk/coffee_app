@@ -1,7 +1,6 @@
 class BrandsController < ApplicationController
   
   def create
-    puts params[:brand]
     if Brand.find_by(name: params[:brand][:name])
       # flash[:name_taken] = error msg
     else

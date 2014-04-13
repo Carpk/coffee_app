@@ -4,7 +4,8 @@
 </div>
 <div class='content form-right'>
   <h3>Submit a review:</h3>
-  <%= form_for @new_review, url: brand_beans_reviews_path(@bean.id) do |f| %> 
+  <%= form_for @new_review, url: brand_beans_reviews_path(@bean.id) do |f| %>
+      <%= f.hidden_field :bean_id, :value => @bean.id %> 
       <%= f.label :user_name %> <%= f.text_field :user %>
       <%= f.label :drinking_for %> <%= f.text_field :experiance %>
       <%= f.label :brew_type %> <%= f.text_field :brew %>
