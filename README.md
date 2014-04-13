@@ -29,4 +29,4 @@ The bean reviews page, displays a list of all the reviews for this particular be
 
 ### Conclusion
 
-Starting this project, I never wanted there to be a user sign up. But after seeing all the data, and how some submissions should allow the creator to be able delete them, I will have to have a user sign up. But I will also use twitter Oath, which might prompt for a tweet given a rating of 5 on a particular bean review.
+Starting this project, I never wanted there to be a user sign up. But after seeing all the data, and how some submissions should allow the creator to be able delete them, I will have to have a user sign up. But I will also use twitter OAuth, which might prompt for a tweet given a rating of 5 on a particular bean review.
