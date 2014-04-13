@@ -1,5 +1,6 @@
 class Brand < ActiveRecord::Base
   has_many :beans
+  has_many :bean_reviews, through: :beans, source: :reviews
 
   def avg_score
     score = []

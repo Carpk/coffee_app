@@ -14,11 +14,12 @@
 <div class='content left'>
   <h3>Coffee brand selection list:</h3>
   <table>
-    <tr><th>Brand:</th>     <th>Beans Listed:</th>  <th>Brand Score:</th></tr>
+    <tr><th>Brand:</th><th>Beans Listed:</th> <th>Reviews Listed:</th> <th>Brand Score:</th></tr>
     <%@brands.each do |brand| %>
       <tr>
         <td><%= link_to brand.name, brand_path(brand.id) %></td>
         <td><center><%= brand.beans.count %></center></td>
+        <td><center><%= brand.bean_reviews.count %></center></td>
         <td><center><%= brand.avg_score %></center></td>
       </tr>
     <% end %>
