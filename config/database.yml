@@ -8,7 +8,7 @@ development:
   encoding: unicode
   database: coffee_development
   pool: 5
-  username: coffee
+  username:
   password:
 
 # Warning: The database defined as "test" will be erased and
@@ -18,7 +18,8 @@ test:
   adapter: postgresql
   encoding: unicode
   database: coffee_test
-  username: coffee
+  pool: 5
+  username:
   password:
 
 production:
@@ -26,5 +27,5 @@ production:
   encoding: unicode
   database: coffee_production
   pool: 5
-  username: coffee
+  username:
   password:
