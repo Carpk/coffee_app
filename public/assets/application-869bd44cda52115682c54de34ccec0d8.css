@@ -15,7 +15,7 @@
 
 body {
   margin: 0;
-  background-image:url('coffeebeans.jpg');
+  background-image:url('/assets/coffeebeans.jpg');
   /*background-size:80px 60px;*/
 }
 
