@@ -1,6 +1,6 @@
 ## Coffee App
 
-Coffee rating application, submit a brand and bean and rate it! Runs on Rails 4.0.4
+Coffee rating application, submit a brand and bean and rate it! Runs on Rails 4.0.4. And is [deplyed on heroku](http://coffeerankings.herokuapp.com/).
 
 ### Getting Started
 
